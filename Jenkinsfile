@@ -23,8 +23,7 @@ pipeline {
                         body: """<p>Stage 'Checkout' finished with status: ${currentBuild.result}</p>
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
-                        to: 'sanjanaayadav319@gmail.com',
-                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                        to: 'sanjanaayadav319@gmail.com'
                     )
                 }
             }
@@ -47,8 +46,8 @@ pipeline {
                         body: """<p>Stage 'Build' finished with status: ${currentBuild.result}</p>
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
-                        to: 'sanjanaayadav319@gmail.com',
-                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                        to: 'sanjanaayadav319@gmail.com'
+                        
                     )
                 }
             }
@@ -68,8 +67,8 @@ pipeline {
                         body: """<p>Stage 'Test' finished with status: ${currentBuild.result}</p>
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
-                        to: 'sanjanaayadav319@gmail.com',
-                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                        to: 'sanjanaayadav319@gmail.com'
+                       
                     )
                 }
             }
@@ -90,8 +89,8 @@ pipeline {
                         body: """<p>Stage 'Build Docker Image' finished with status: ${currentBuild.result}</p>
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
-                        to: 'sanjanaayadav319@gmail.com',
-                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                        to: 'sanjanaayadav319@gmail.com'
+                       
                     )
                 }
             }
@@ -117,8 +116,8 @@ pipeline {
                         body: """<p>Stage 'Push to Docker Hub' finished with status: ${currentBuild.result}</p>
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
-                        to: 'sanjanaayadav319@gmail.com',
-                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                        to: 'sanjanaayadav319@gmail.com'
+                       
                     )
                 }
             }
@@ -132,8 +131,8 @@ pipeline {
                 body: """<p>Pipeline Status: ${currentBuild.result}</p>
                          <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                 mimeType: 'text/html',
-                to: 'sanjanaayadav319@gmail.com',
-                recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                to: 'sanjanaayadav319@gmail.com'
+               
             )
         }
     }
