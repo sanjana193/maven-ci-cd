@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK'               // Set this name in Jenkins > Global Tool Configuration
+        jdk 'JDK1'               // Set this name in Jenkins > Global Tool Configuration
         dockerTool 'docker'
     }
 
