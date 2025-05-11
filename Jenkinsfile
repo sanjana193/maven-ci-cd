@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK1'               // Set this name in Jenkins > Global Tool Configuration
+        jdk 'JDK'               // Set this name in Jenkins > Global Tool Configuration
         dockerTool 'docker'
     }
 
     environment {
-        DOCKER_IMAGE = 'sanjana193/myapp'
+        DOCKER_IMAGE = 'sanjana19/myapp'
         DOCKER_TAG = "${BUILD_NUMBER}"
     }
 
