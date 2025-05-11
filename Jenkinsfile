@@ -19,7 +19,7 @@ pipeline {
             post {
                 always {
                     emailext (
-                        subject: "Stage Checkout Status: ${curretBuild.fullDisplayName}",
+                        subject: "Stage Checkout Status: ${currentBuild.fullDisplayName}",
                         body: """<p>Stage 'Checkout' finished with status: ${currentBuild.result}</p>
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
