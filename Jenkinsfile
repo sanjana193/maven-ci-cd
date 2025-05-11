@@ -24,6 +24,7 @@ pipeline {
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
                         to: 'sanjanaayadav319@gmail.com'
+                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
                     )
                 }
             }
@@ -47,6 +48,7 @@ pipeline {
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
                         to: 'sanjanaayadav319@gmail.com'
+                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
                     )
                 }
             }
@@ -67,6 +69,7 @@ pipeline {
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
                         to: 'sanjanaayadav319@gmail.com'
+                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
                     )
                 }
             }
@@ -88,6 +91,7 @@ pipeline {
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
                         to: 'sanjanaayadav319@gmail.com'
+                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
                     )
                 }
             }
@@ -114,6 +118,7 @@ pipeline {
                                  <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                         mimeType: 'text/html',
                         to: 'sanjanaayadav319@gmail.com'
+                        recipientProviders: [[$class: 'DevelopersRecipientProvider']]
                     )
                 }
             }
@@ -128,6 +133,7 @@ pipeline {
                          <p>Check console output at <a href='${BUILD_URL}'>${BUILD_URL}</a></p>""",
                 mimeType: 'text/html',
                 to: 'sanjanaayadav319@gmail.com'
+                recipientProviders: [[$class: 'DevelopersRecipientProvider']]
             )
         }
     }
